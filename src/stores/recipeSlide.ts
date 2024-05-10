@@ -1,6 +1,7 @@
 import { StateCreator } from "zustand";
 import { getCategories, getRecipeById, getRecipes } from "../services/RecipeService";
 import type { Categories, Drink, Drinks, Recipe, SearchFilter } from "../types";
+import { FavoritesSliceType } from "./favoritesSlice";
 
 export type RecipesSlideType = {
     categories: Categories,
@@ -13,7 +14,7 @@ export type RecipesSlideType = {
     closeModal: () => void;
 };
 
-export const createRecipesSlice: StateCreator<RecipesSlideType> = (set) => ({
+export const createRecipesSlice: StateCreator<RecipesSlideType & FavoritesSliceType, [], [], RecipesSlideType> = (set) => ({
     categories: {
         drinks: []
     },
