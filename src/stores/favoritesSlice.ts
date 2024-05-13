@@ -6,7 +6,8 @@ export type FavoritesSliceType = {
     favorites: Recipe[],
     handleClickFavorite: (recipe: Recipe) => void,
     favoriteExists: (id: Recipe["idDrink"]) => boolean,
-    loadFromStorage: () => void | "" | null;
+    loadFromStorage: () => void | "" | null,
+    removeFavorites: () => void;
 };
 
 export const createFavoritesSlice: StateCreator<FavoritesSliceType & RecipesSlideType, [], [], FavoritesSliceType> = (set, get, api) => ({
@@ -35,5 +36,11 @@ export const createFavoritesSlice: StateCreator<FavoritesSliceType & RecipesSlid
                 favorites: JSON.parse(storedFavorites)
             }
         );
+    },
+    removeFavorites: () => {
+        localStorage.removeItem('favorites');
+        set({
+            favorites: []
+        });
     }
 });
