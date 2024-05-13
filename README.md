@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Bebidas App API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About this project
+In this project we make an app that call an drinks API, this API has too many endpoints to use, but we use some of this endpoints to get the drinks depending of the input on a Form, then we can use this data to add some Favorite Drinks, this Favorites Drink are display on a different Page.
 
-Currently, two official plugins are available:
+![preview app](./preview.webp);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Techs
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Typescript 
+- AXIOS 
+- ZOD 
+- ZUSTAND 
+- React Router DOM 
+- TAILWINDCSS 
+- HTML
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## How can i used it?
+First you wanna need to clone this repo
+
+```bash
+git clone <Repo_URL>
+```
+Then, you need to installed all dependencies:
+
+```bash
+npm run install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Finally, you need to start your development area
+
+```bash
+npm run install
+```
+
+## Live Project
+🔗 https://bebidas-typescript.vercel.app
