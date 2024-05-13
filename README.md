@@ -3,7 +3,7 @@
 ### About this project
 In this project we make an app that call an drinks API, this API has too many endpoints to use, but we use some of this endpoints to get the drinks depending of the input on a Form, then we can use this data to add some Favorite Drinks, this Favorites Drink are display on a different Page.
 
-![preview app](./preview.webp);
+![preview app](./preview.webp)
 
 
 ## Techs
@@ -32,7 +32,7 @@ npm run install
 Finally, you need to start your development area
 
 ```bash
-npm run install
+npm run dev
 ```
 
 ## Live Project
