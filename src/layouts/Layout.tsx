@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Modal from "../components/Modal";
 
 import { useAppStore } from "../stores/useAppStore";
+import Notification from "../components/Notification";
 
 export default function Layout() {
 
@@ -21,6 +22,7 @@ export default function Layout() {
             </main>
 
             <Modal />
+            <Notification />
         </>
     );
 }
