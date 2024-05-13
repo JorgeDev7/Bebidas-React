@@ -14,8 +14,9 @@ export default function FavoritesPage() {
                 <h1 className="text-6xl font-extrabold">Favoritos</h1>
                 <button
                     type="button"
-                    className="bg-orange-400 hover:bg-orange-600 px-5 py-2 text-white hover:text-slate-900 font-bold rounded transition-colors duration-300"
+                    className="bg-orange-400 hover:bg-orange-600 px-5 py-2 text-white hover:text-slate-900 font-bold rounded transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                     onClick={() => removeFavorites()}
+                    disabled={!favorites.length ? true : false}
                 >
                     Eliminar Favoritos
                 </button>
